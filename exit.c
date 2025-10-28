@@ -10,9 +10,12 @@ void cleanup2() {
 }
 
 int main() {
-	atexit(cleanup1);	// atexit()에 등록된 함수 수행 (등록의 역순)
+	// atexit(): 프로세스 종료시 수행할 작업을 예약
+	// 	     예약된 순서의 역순으로 수행됨 (LIFO)
+	atexit(cleanup1);
 	atexit(cleanup2);
 
 	printf("!!!\n");
+	// exit(): 프로세스를 종료시키고, 상태값을 부모 프로세스에 전달
 	exit(0); // or return 0;
 }
