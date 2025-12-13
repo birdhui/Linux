@@ -1,0 +1,1 @@
+savedcmd_/home/tpgml/workspace/linux/kernel_module/Module.symvers :=  scripts/mod/modpost -M -m       -o /home/tpgml/workspace/linux/kernel_module/Module.symvers -T /home/tpgml/workspace/linux/kernel_module/modules.order -i Module.symvers -e 
